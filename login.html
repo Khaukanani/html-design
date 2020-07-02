@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {background: #f1f1f1;}
+
+.header{
+  width: 100%;
+  height: 100px;
+  background-color: #b3cccc;
+  padding-bottom: 0px;
+}
+
+h2{
+  color: grey;
+  text-align: center;
+  padding-top:60px;
+  padding-bottom: 20px; 
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #b3cccc;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.btn {
+  float: right;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: -60px;
+}
+
+img.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+}
+
+.container {
+  padding: 16px;
+}
+
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<form action="/action_page.php" method="post">
+  <div class="header"></div>
+  <div class="imgcontainer">
+    <img src="dda.png" class="avatar">
+  </div>
+     <h2>Please enter your full name and password</h2>
+  <div class="container">
+    <input type="text" placeholder="Full Name" name="uname" required>
+
+    <input type="password" placeholder="******" name="psw" required>
+     
+        <label>
+      <input type="checkbox" checked="checked" name="terms"> Check this box to agree on terms and conditions
+    </label> <br>  
+    <button type="submit">SIGNUP</button>
+    <button type="submit" class="btn">CANCEL</button>
+  </div>
+</form>
+
+</body>
+</html>
